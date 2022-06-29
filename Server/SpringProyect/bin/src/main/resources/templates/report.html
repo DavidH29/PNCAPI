@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <link th:href="@{/css/navbar.css}" rel="stylesheet" type="text/css">
+   <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css">
+   <link th:href="@{/css/report.css}" rel="stylesheet" type="text/css">
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- NAVIGATOR --------------->
+<header>
+<nav class="main-nav-container">
+<div class="nav-container">  
+    <div class="logo-nav-container" > 
+        <img class="logo-nav" th:src="@{/images/logopets.png}" alt="logo">
+        <a href="main"> <H1 style="margin-top: auto; margin-bottom: auto; color: white; font-size: 2.5rem; ">PETSV</H1></div>
+    </div>
+</div>
+<div class="nav-container"> <a href="aboutus">¿Quienes somos?</a> </div>
+<div class="nav-container"> <a href="campaigns">Campañas</a> </div>
+<div class="nav-container"> <a href="report">Reportar mascota</a>  </div>
+<div class="nav-container"> <a href="">Usuario</a> </div>
+<div class="nav-container"> 
+    <div class="exit-nav">
+    <a class="boton_personalizado" href="index">Salir</a>
+</div>    
+</div>
+</nav>
+</header>
+<!-- NAVIGATOR END --------------->
+
+
+
+<!-- REPORT A PET --------------->
+<div class="container-0">
+    <div class="report-img-container">
+        <img class="reportDog-img" th:src="@{/images/found_dog.png}" alt="logo">
+    </div>
+</div>
+<div class="main-container">
+    
+    <div class="container-1">
+    <h1 style="margin-bottom: 10px; text-align: center;  margin-top: 5px; font-family: helvetica;">Formulario de mascota encontrada</h1>
+    <p style="margin-bottom: 5px; margin-left: 10px; font-family: helvetica;">
+        Rellena los campos con sus respectivos datos, si se desconoce alguno, aproximarlo lo mas que se pueda
+    </p>
+    
+    <form action="newPet" method="post">
+    </div>
+
+
+
+    <div class="container-2">
+    <h2 style="margin-left: 10px; font-family: helvetica;">Mascota</h2>
+    <div class="report-pet-form-container">
+    <div class="report-column-left">
+    <label for="animalname"> Nombre de la mascota: <input type="text" name="animalname" id="animalname"
+            placeholder="Nombre de la mascota"></label>
+    <label for="kind">Especie: <input type="text" name="kind" id="kind" placeholder="Especie"></label>
+    <label for="race">Raza: <input type="text" name="race" id="race" placeholder="Raza"></label>
+    <label for="size">Tamaño: <input type="text" name="size" id="size" placeholder="tamaño"></label>
+    <label for="img">Imagen: <input type="file" name="img" id="img"></label>
+</div>
+    <div class="report-column-right">
+    <label for="gender">Sexo: <input type="text" name="gender" id="gender" placeholder="Sexo"></label>
+    <label for="color">Color: <input type="text" name="color" id="color" placeholder="Color"></label>
+    <label for="age">Edad: <input type="text" name="age" id="age" placeholder="Edad"></label>
+    <label for="plate">Placa: <input type="text" name="plate" id="plate" placeholder="Placa"></label>
+    <label for="description">Descripcion: <input style="padding-right: 200px; " type="text" name="description" id="description"
+            placeholder="Descripcion"></label>
+        </div>
+    </div>
+</div>
+    
+    <div class="container-3">
+    <h2 style="margin-left: 10px; font-family: helvetica;">Voluntario</h2>
+    <div class="report-volunteer-form-container">
+    <label for="personname">Nombre de la persona: <input type="text" name="personname" id="personname"
+            placeholder="Nombre de la persona"></label>
+    <label for="date">Fecha: <input type="date" name="date" id="date"></label>
+    <label for="address">Ubicacion: <input  style="padding-right: 200px; "type="text" name="address" id="address"
+            placeholder=" donde fue encontrado"></label>
+    <label for="capaignname">Nombre de la campaña que colaboro: <select name="name" id="capaignname">
+            <option value="none">Select</option>
+            <option value="Sanbartolo">San bartolo</option>
+            <option value="Ilopanggo">Ilopanggo</option>
+            <option value="Apopa">Apopa</option>
+        </select></label>
+    <label for="phone">Numero de telefono: <input type="text" name="phone" id="phone"
+            placeholder="Numero de telefono"></label>
+        </div>
+        </div>
+
+
+    <div class="container-4">   
+    <input class="done-btn" type="submit" value="Publicar">
+    </div>
+    </form>
+
+</div>
+
+<!-- REPORT A PET END --------------->
+
+<div class="container-4">
+    <div class="main-footer-container">
+        <div class="footer-container">  
+            <div class="logo-footer-container">
+            <img class="logo-footer" th:src="@{/images/logopets-recortado.png}" alt="logo footer">
+            <h2>PETSV</h2>
+        </div>
+        <p style="margin-left: 30px;" class="footer-lema">Ayudanos a encontrarnos</p>
+        <div class="footer-copyright">
+            <hr>
+            <h4>Copyright 2022</h4>
+        </div>
+        </div>
+        <div class="footer-container">  </div>
+        <div class="footer-container">  </div>
+        <div class="footer-container">  </div>
+        <div class="footer-container"> 
+            <div style="margin-top:10px; "    >
+            <h4>Siguenos</h4>
+            <hr>
+           </div>
+             <div class="footer-socialmedia">
+                 <img class="footer-socialmedia-img" th:src="@{/images/footer-social-media.png}" alt="social media">
+             </div>
+            <h4>Contactanos</h4>
+            <div style="display: flex; align-content: space-around;  gap: 15px;">
+            <div><h4>2257-7777</h4></div>
+            <div><h4>7666-7777</h4></div>
+        </div>
+        </div>
+        <div class="footer-container"> <img class="footer-pets-img"  th:src="@{/images/footer_pets.png}" alt="footer pets">  </div>
+    </div>   
+</div>
+</div>
+</body>
+
+</html>

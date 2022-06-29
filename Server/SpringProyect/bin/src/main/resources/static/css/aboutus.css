@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.main-container {
+    display: flex;
+    
+    width: 100%;
+    height:  100%;
+    flex-direction: column;
+}
+
+.container-1 {
+   
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://www.guias-turisticos.es/wp-content/uploads//11060725766_527d049c0d_b.jpg");
+    background-size: cover;
+}
+
+.container-2 {
+    
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.wallpapersafari.com/28/35/BQfbRN.jpg");
+    background-size: cover;
+
+}
+
+.container-3 {
+  
+    width: 100%;
+    height: 100vh;
+    background-color: #B2FFFF;
+}
+
+.container-4 {
+    
+   
+    width: 100%;
+    height: 150px;
+
+
+}
+
+.main-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.catdog-img {
+    width: 140px;
+    height: 120px;
+    margin-top: 20px;
+    
+}
+
+.catdog-img-container {
+width: 140px;
+height: 120px;
+margin-left: auto;
+margin-right: auto;
+
+}
+.about-us-container {
+    background-color: rgba(240, 248, 255, 0.637);
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+
+.about-us-img-container {
+   
+    width: 200px;
+    
+}
+
+.mission-vission-container {
+    background-color: rgba(240, 248, 255, 0.637);
+    margin-bottom: 0px;
+    align-self: flex-end;
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.mission-img {
+    width: 180px;
+    height: 200px;
+}
+
+.offer-container {
+    background-color: rgba(240, 248, 255, 0.779);
+    width: 800px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+
+.offer-grid{
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.offer-description {
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.offer-img {
+    width: 300px;
+    height: 300px;
+}
+.teamwork-title {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.616);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.teamwork {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.developer {
+    width: 250px;
+    height: 400px;
+    background-color: rgba(240, 248, 255, 0.559);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.developer-img-container {
+    margin: auto;
+    border-radius: 100px;
+}
+
+.developer-name {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.689);
+    font-size: 1.2rem;
+}
+
+.developer-dog-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.adonay-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+
+}
+
+.daniel-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+
+}
+
+.deibi-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+
+}
+
+.juanca-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+
+}
+
+
+
+.main-footer-container {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    height: 125px;
+    bottom: 0;
+    color: #fff;
+    margin-bottom: 1px;
+
+
+
+}
+
+
+
+.footer-container {
+
+    background-color: #48ACB8;
+
+    width: 100%;
+    height: 125px;
+    
+
+}
+
+.logo-footer-container {
+
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer-copyright {
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.footer-pets-img {
+    float: right;
+    margin-top: -35px;
+    height: 150px;
+    width: 200px;
+}
+
+
+.footer-socialmedia {
+
+    padding-bottom: 8px;
+
+}
+
+.footer-socialmedia-img {
+    width: 150px;
+    height: 30px;
+}
+
+
+hr {
+    background-color: #00DBD0;
+    width: 100px;
+    height: 3px;
+    color: #00DBD0;
+}
+
+@media (max-width:500px) {
+    .main-footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-us-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .mission-vission-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .offer-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .offer-grid {
+        flex-wrap: wrap;
+    }
+    
+    .teamwork {
+    
+        flex-wrap: wrap;
+        
+        
+    }
+}

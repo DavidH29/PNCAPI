@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th"http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <link th:href="@{/css/navbar.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/aboutus.css}" rel="stylesheet" type="text/css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> index </title>
+
+   
+</head>
+
+<body>
+
+<!-- NAVIGATOR --------------->
+<header>
+<nav class="main-nav-container">
+<div class="nav-container">  
+    <div class="logo-nav-container" > 
+        <img class="logo-nav" th:src="@{/images/logopets.png}" alt="logo">
+        <a href="main"> <H1 style="margin-top: auto; margin-bottom: auto; color: white; font-size: 2.5rem; ">PETSV</H1></div>
+    </div>
+</div>
+<div class="nav-container"> <a href="aboutus">¿Quienes somos?</a> </div>
+<div class="nav-container"> <a href="campaigns">Campañas</a> </div>
+<div class="nav-container"> <a href="report">Reportar mascota</a>  </div>
+<div class="nav-container"> <a href="">Usuario</a> </div>
+<div class="nav-container"> 
+    <div class="exit-nav">
+    <a class="boton_personalizado" href="index">Salir</a>
+</div>    
+</div>
+</nav>
+</header>
+<!-- NAVIGATOR END --------------->
+
+<div class="main-container">
+
+<div class="container-1">
+    <h1 class="main-title">PETSV Ayudanos a encontrarnos </h1>
+    <div class="catdog-img-container">
+        <img  class="catdog-img" th:src="@{/images/1_catdog.png}" alt="logo">
+    </div>
+<div class="about-us-container">
+    <div class="about-us-description">
+        <p style="font-size: 2rem;">Proyecto 100% salvadoreño enfocado en el amor
+            que le tenemos a los animales, pretendemos 
+           centralizar las denuncias de mascotas 
+           perdidas en un solo lugar, asi como encontrarles una
+            nueva familia a aquellas que no sean reclamadas</p>
+    </div>
+    <div class="about-us-img-container">
+        <img style="height: 150px; border-radius: 30px; width: 200px;" class="catdog-img" th:src="@{/images/2_salvador_mundo.jpg}" alt="logo">
+    </div>
+
+</div>
+<div class="mission-vission-container">
+    <div class="mission-img-container">
+        <img  class="mission-img" th:src="@{/images/3_cat.png}" alt="logo">
+    </div>
+    <div class="mission-description-container">
+    <h3 style="color: rgba(0, 0, 0, 0.616);font-size: 1.8rem;">Mision</h3>
+    <p style="font-size: 1.5rem;"> Ayudar a todas aquellas personas que hayan
+        perdido una mascota así como todos aquellos que
+       deseen adoptar una</p>
+       <h3 style="color: rgba(0, 0, 0, 0.616);font-size: 1.8rem;">Vision</h3>
+    <p style="font-size: 1.5rem;" >Aportar a la disminución de mascotas perdidas 
+        en pro del bienestar tanto de los dueños como
+         de los animales domésticos</p>
+    </div>
+</div>
+
+</div>
+<div class="container-2">
+<div class="offer-container">
+    <div class="offer-description">
+        <h3 style="    color: rgba(0, 0, 0, 0.616);
+        font-family: Helvetica; font-size: 2rem;">OFRECEMOS</h3>
+        <p style="margin-top: 10px; font-size: 1.5rem;">La aplicación pretende centralizar las denuncias de mascotas perdidas en un solo lugar, para que los usuarios puedan ver aquellas mascotas que se desconoce su paradero, así como el estado de su búsqueda y otra información de interés, así como poder ver aquellas mascotas que han sido encontradas.</p>
+    <p style="margin-top: 10px; font-size: 1.5rem;">La idea es poder aportar a la disminución de mascotas perdidas en pro del bienestar tanto de los dueños como de los animales domésticos, apoyándonos en el cumplimiento del Art. 2 de la ley de protección y promoción del bienestar de animales de compañía.
+    </p>
+    <div class="offer-grid">
+    <p style="font-size: 1.5rem;">La aplicación es única en el país, hasta el momento, no existe un servicio parecido en El Salvador, por lo que estamos honrados desde nuestros conocimientos en la informática de ser pioneros en crear un servicio como este para ayudar a los salvadoreños.
+    </p>
+    
+    <div class="offer-img-container"><img  class="offer-img" th:src="@{/images/4_medicaldog.png}" alt="logo"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-3">
+<h2 class="teamwork-title">Equipo desarrollador</h2>
+<div class="teamwork">
+    <div class="developer">
+        <div class="developer-img-container">
+            <img class="adonay-img" th:src="@{/images/adonay.jpeg}" alt="developer dog">
+           <h4 class="developer-name">Fernando Rosa</h4>
+        </div>
+    </div>
+    <div class="developer">
+        <div class="developer-img-container">
+            <img class="deibi-img" th:src="@{/images/deibi.jpeg}" alt="developer dog">
+            <h4 class="developer-name">David Hurtado</h4>
+        </div>
+    </div>
+    <div class="developer">
+        <div class="developer-img-container">
+            <img class="daniel-img" th:src="@{/images/daniel.jpeg}" alt="developer dog">
+            <h4 class="developer-name">Daniel Morales</h4>
+        </div>
+    </div>
+    <div class="developer">
+        <div class="developer-img-container">
+            <img class="juanca-img" th:src="@{/images/juan.jpeg}" alt="developer dog">
+            <h4 class="developer-name">Juan Carlos Vasquez</h4>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER --------------->
+
+<div class="container-4">
+    <div class="main-footer-container">
+        <div class="footer-container">  
+            <div class="logo-footer-container">
+            <img class="logo-footer" th:src="@{/images/logopets-recortado.png}" alt="logo footer">
+            <h2>PETSV</h2>
+        </div>
+        <p style="margin-left: 30px;" class="footer-lema">Ayudanos a encontrarnos</p>
+        <div class="footer-copyright">
+            <hr>
+            <h4>Copyright 2022</h4>
+        </div>
+        </div>
+        <div class="footer-container">  </div>
+        <div class="footer-container">  </div>
+        <div class="footer-container">  </div>
+        <div class="footer-container"> 
+            <div style="margin-top:10px; "    >
+            <h4>Siguenos</h4>
+            <hr>
+           </div>
+             <div class="footer-socialmedia">
+                 <img class="footer-socialmedia-img" th:src="@{/images/footer-social-media.png}" alt="social media">
+             </div>
+            <h4>Contactanos</h4>
+            <div style="display: flex; align-content: space-around;  gap: 15px;">
+            <div><h4>2257-7777</h4></div>
+            <div><h4>7666-7777</h4></div>
+        </div>
+        </div>
+        <div class="footer-container"> <img class="footer-pets-img"  th:src="@{/images/footer_pets.png}" alt="footer pets">  </div>
+    </div>   
+</div>
+</div>
+
+</body>
+
+</html>

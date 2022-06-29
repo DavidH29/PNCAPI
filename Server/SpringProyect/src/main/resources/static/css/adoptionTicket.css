@@ -1,0 +1,81 @@
+
+.ticketDog-img {
+    width: 140px;
+    height: 120px;
+    
+}
+
+.ticket-img-container {
+width: 140px;
+height: 120px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+
+}
+
+
+
+.ticket-card-container {
+
+
+    display: flex;
+    justify-content: center;
+   
+    text-decoration: none;
+    
+    
+    }
+    
+    .ticket-card {
+        width: 800px;
+        height: 300px;
+        margin-top: auto;
+        margin-right: auto;
+        background-color: rgba(182, 240, 243, 0.142);
+        list-style:none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.68);
+        display: flex;
+      
+    }
+    
+    
+    .ticket-card-description {
+        
+        height: 100px;
+        margin-left: 30px;
+        font-size: 1.2rem;
+        font-family: helvetica;
+    
+    }
+    
+    .ticket-card-name {
+        
+        height: 50px;
+        font-size: 1.5rem;
+        font-family: helvetica;
+        margin-top: 15px;
+        text-align: center;
+    
+    }
+
+
+    .ticket-info {
+     
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 30px;
+    }
+  
+    @media (max-width:800px) {
+        .main-footer-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .ticket-card {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }

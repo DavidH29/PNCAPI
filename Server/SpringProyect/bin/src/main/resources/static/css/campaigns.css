@@ -1,0 +1,132 @@
+
+.tittle-main {
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    font-family: helvetica;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 200px;
+}
+
+
+.campaigns-card-container {
+
+
+display: flex;
+justify-content: center;
+margin-top: 30px;
+text-decoration: none;
+
+
+}
+
+.campaigns-card {
+    width: 800px;
+    height: 300px;
+    margin-top: auto;
+    margin-right: auto;
+    background-color: rgba(182, 240, 243, 0.142);
+    list-style:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.68);
+    display: flex;
+   
+
+   
+    
+}
+
+
+.campaigns-card-description {
+    
+    height: 100px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-family: helvetica;
+
+}
+
+.campaigns-card-name {
+    
+    height: 50px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-family: helvetica;
+    margin-top: 15px;
+
+}
+
+.campaigns-card-btn-container {
+
+    
+    margin-bottom: 10px;
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    gap: 10px;
+    
+}
+
+
+.info_campaigns-btn{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    font-family: helvetica;
+    font-weight: 300;
+    color: white;
+    background-color: #007BFF;
+    margin-left: 5px;
+    border: 3px double #007BFF;
+  }
+  .info_campaigns-btn:hover{
+    
+    text-decoration: none;
+    background-color: #6ab1fc;
+    color: white;
+  }
+
+
+.delete_campaigns-btn{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    font-family: helvetica;
+    font-weight: 300;
+    color: #DC3545;
+    background-color: white;
+
+    border: 3px double #DC3545;
+  }
+  .delete_campaigns-btn:hover{
+    
+    text-decoration: none;
+    background-color: #DC3545;
+    color: white;
+  }
+  .campaigns-info {
+     
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 10px;
+  }
+
+  @media (max-width:800px) {
+
+    .main-footer-container {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+    .tittle-main-container {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    
+    .campaigns-card {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

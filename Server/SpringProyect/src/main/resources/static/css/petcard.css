@@ -1,0 +1,166 @@
+
+
+.tittle-main {
+    text-align: center;
+    margin-top: 20px;
+    font-family: helvetica;
+}
+
+
+.pet-card-container {
+
+
+display: flex;
+justify-content: center;
+margin-top: 30px;
+text-decoration: none;
+
+
+}
+
+.pet-card {
+    width: 800px;
+    height: 300px;
+    margin-top: auto;
+    margin-right: auto;
+    background-color: rgb(253, 252, 251);
+    list-style:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.68);
+    display: flex;
+   
+
+   
+    
+}
+
+.pet-card-img-container {
+
+width: 200px;
+height: 300px;
+
+}
+
+
+.pet-card-img {
+    width: 200px;
+    height: 300px;
+}
+
+
+
+.pet-card-description {
+    
+    height: 200px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.pet-card-name {
+    
+    height: 50px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.pet-card-btn-container {
+
+    
+    margin-bottom: 10px;
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    gap: 10px;
+    
+}
+
+
+.info_petcard-btn{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    font-family: helvetica;
+    font-weight: 300;
+    color: white;
+    background-color: #007BFF;
+
+    border: 3px double #007BFF;
+  }
+  .info_petcard-btn:hover{
+    
+    text-decoration: none;
+    background-color: #6ab1fc;
+    color: white;
+  }
+
+
+.delete_petcard-btn{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    font-family: helvetica;
+    font-weight: 300;
+    color: #DC3545;
+    background-color: white;
+
+    border: 3px double #DC3545;
+  }
+  .delete_petcard-btn:hover{
+    
+    text-decoration: none;
+    background-color: #DC3545;
+    color: white;
+  }
+
+
+  @media (max-width:500px) {
+    .pet-card-btn-container {
+
+    
+      margin-bottom: 10px;
+      display: flex;
+      float: right;
+      margin-right: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      
+  }
+
+
+  .pet-card {
+    width: 400px;
+    height: 350px;
+    margin-top: auto;
+    margin-right: auto;
+    background-color: white;
+    list-style:none;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.pet-card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: none;
+   flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .pet-card-img-container {
+
+    width: 100px;
+    height: 200px;
+    
+    }
+    
+    
+    .pet-card-img {
+        width: 100px;
+        height: 200px;
+    }
+    
+    
+
+}

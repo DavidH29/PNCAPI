@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <link th:href="@{/css/navbar.css}" rel="stylesheet" type="text/css">
+   <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css">
+   <link th:href="@{/css/newCampaign.css}" rel="stylesheet" type="text/css">
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Campaña</title>
+</head>
+
+<body>
+<!-- NAVIGATOR --------------->
+<header>
+<nav class="main-nav-container">
+<div class="nav-container">  
+    <div class="logo-nav-container" > 
+        <img class="logo-nav" th:src="@{/images/logopets.png}" alt="logo">
+        <a href="main"> <H1 style="margin-top: auto; margin-bottom: auto; color: white; font-size: 2.5rem; ">PETSV</H1></div>
+    </div>
+</div>
+<div class="nav-container"> <a href="aboutus">¿Quienes somos?</a> </div>
+<div class="nav-container"> <a href="campaigns">Campañas</a> </div>
+<div class="nav-container"> <a href="report">Reportar mascota</a>  </div>
+<div class="nav-container"> <a href="">Usuario</a> </div>
+<div class="nav-container"> 
+    <div class="exit-nav">
+    <a class="boton_personalizado" href="index">Salir</a>
+</div>    
+</div>
+</nav>
+</header>
+<!-- NAVIGATOR END --------------->
+
+
+<!-- New CAMPAIGN  --------------->
+ <div class="main-container">
+         <div class="container-1">
+    <div class="newCampaign-img-container">
+        <img class="campaignDog-img"  th:src="@{/images/campaign_dog.png}" alt="logo">
+    </div>
+        </div>
+
+     <div class="container-2">
+    <div class="newCampaign-form-container">
+    
+     <div class="title-container">
+    <h1>Crea una nueva campaña para que te resulte mas facil rescatar animales de la calle</h1>
+    </div>  
+    <div class="newCampaign-form-box">
+    <form class="newCampaign-form" action="" method="post">
+            <p>Nombre de la campaña
+               <input type="text" name="nameOfCamapaing" id="nameOfCamapaing"
+            placeholder="" /> </p>
+            <p>Departamento
+                <input  type="text" name="deparment" id="deparment" placeholder="" /> </p>
+            <p>Ubicacion
+                <input style="padding-right: 200px;" type="text" name="address" id="address"
+            placeholder="Colonia, calle, municipio..." /></p>
+            <p>Fecha
+                <input type="text" name="date" id="date" placeholder="Fecha de realizacion" /> </p>
+            <p>Breve descripcion
+                <input style="padding-right: 200px; padding-bottom: 20px;" type="text" name="description" id="description" placeholder="Descipcion" /></p>
+    </form>
+    </div> 
+    <div class="done-btn-container"><input class="done-btn" type="submit" value="Hecho" /></div>
+    </div>
+    
+     </div>
+ </div> 
+</div>
+<!-- New CAMPAIGN END --------------->
+
+
+
+ 
+<!-- FOOTER --------------->
+<footer class="main-footer-container">
+<div class="footer-container">  
+    <div class="logo-footer-container">
+    <img class="logo-footer" th:src="@{/images/logopets-recortado.png}" alt="logo footer">
+    <h2>PETSV</h2>
+</div>
+<p style="margin-left: 30px;" class="footer-lema">Ayudanos a encontrarnos</p>
+<div class="footer-copyright">
+    <hr>
+    <h4>Copyright 2022</h4>
+</div>
+</div>
+<div class="footer-container">  </div>
+<div class="footer-container">  </div>
+<div class="footer-container">  </div>
+<div class="footer-container"> 
+    <div style="margin-top:10px; "    >
+    <h4>Siguenos</h4>
+    <hr>
+   </div>
+     <div class="footer-socialmedia">
+         <img class="footer-socialmedia-img" th:src="@{/images/footer-social-media.png}" alt="social media">
+     </div>
+    <h4>Contactanos</h4>
+    <div style="display: flex; align-content: space-around;  gap: 15px;">
+    <div><h4>2257-7777</h4></div>
+    <div><h4>7666-7777</h4></div>
+</div>
+</div>
+<div class="footer-container"> <img class="footer-pets-img"  th:src="@{/images/footer_pets.png}" alt="footer pets">  </div>
+</footer>
+<!-- FOOTER END ---------------> 
+</body>
+
+</html>

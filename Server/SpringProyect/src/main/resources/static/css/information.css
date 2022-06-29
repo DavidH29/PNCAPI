@@ -1,0 +1,133 @@
+.main-container {
+background-color: rgba(0, 255, 255, 0.128);
+display: flex;
+flex-direction: column;
+width: 800px;
+height: 510px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.68);
+
+}
+
+.container-1 {
+display: flex;
+}
+
+.container-2 {
+    flex-grow: 2;
+    display: flex;
+
+}
+
+.container-3 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: -20px;
+    
+}
+    
+    
+.pet-name {
+width: 700px;
+text-align: center;
+}
+.info-img-container {
+ width: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.pet-card-img {
+    width: 200px;
+    height: 300px;
+}
+
+
+.info-data-container {
+width: 600px;
+}
+
+.pet-data {
+flex-grow: 1;
+height: 200px;
+display: flex;
+justify-content: space-between;
+}
+
+.volunteer-data {
+    flex-grow: 1;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+
+
+}
+.pet-data-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.info_petcard-btn{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    font-family: helvetica;
+    font-weight: 300;
+    color: white;
+    background-color: #007BFF;
+
+    border: 3px double #007BFF;
+  }
+  .info_petcard-btn:hover{
+    
+    text-decoration: none;
+    background-color: #6ab1fc;
+    color: white;
+  }
+
+
+.delete_petcard-btn{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    font-family: helvetica;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.525);
+    background-color: white;
+
+    border: 3px double #6ab1fc;
+  }
+  .delete_petcard-btn:hover{
+    
+    text-decoration: none;
+    background-color: #6ab1fc;
+    color: white;
+  }
+
+  @media (max-width:800px) {
+    .main-footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .volunteer-data {
+      width: 100%;
+    }
+
+}

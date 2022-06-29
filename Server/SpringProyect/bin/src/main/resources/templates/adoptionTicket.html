@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th"http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <link th:href="@{/css/navbar.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/adoptionTicket.css}" rel="stylesheet" type="text/css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adopta una mascota </title>
+
+   
+</head>
+
+<body>
+
+<!-- NAVIGATOR --------------->
+<header>
+<nav class="main-nav-container">
+<div class="nav-container">  
+    <div class="logo-nav-container" > 
+        <img class="logo-nav" th:src="@{/images/logopets.png}" alt="logo">
+        <a href="main"> <H1 style="margin-top: auto; margin-bottom: auto; color: white; font-size: 2.5rem; ">PETSV</H1></div>
+    </div>
+</div>
+<div class="nav-container"> <a href="aboutus">¿Quienes somos?</a> </div>
+<div class="nav-container"> <a href="campaigns">Campañas</a> </div>
+<div class="nav-container"> <a href="report">Reportar mascota</a>  </div>
+<div class="nav-container"> <a href="">Usuario</a> </div>
+<div class="nav-container"> 
+    <div class="exit-nav">
+    <a class="boton_personalizado" href="index">Salir</a>
+</div>    
+</div>
+</nav>
+</header>
+<!-- NAVIGATOR END --------------->
+
+<!-- Ticket--------------->
+
+<div class="ticket-img-container">
+    <img class="ticketDog-img" th:src="@{/images/biker_dog.png}" alt="logo">
+</div>
+<div class="ticket-card-container">
+<ul style="list-style:none;" >
+   	<li>
+		<div class="ticket-card" >
+		   
+		    <div class="ticket-card-description-container" >
+		        <h2 class="ticket-card-name" >Ticket de Adopcion</h2>
+		        <p class="ticket-card-description" >Si nadie reclama a una mascota en un periodo de 30 días 
+                    puedes adoptarlo con este numero de ticket </p>
+                <div class="ticket-info">
+                    <h3 style="font-size: 1.5rem;"># de ticket:</h3>
+                    <h3 class="date">Nombre de usuario</h3>
+                    <h3 class="contact">Correo</h3>
+                </div>           
+               
+		    </div>
+		</div>
+   	</li>
+   </ul>
+</div>
+
+<!-- Ticket  END--------------->
+
+
+<!-- FOOTER --------------->
+<footer class="main-footer-container">
+<div class="footer-container">  
+    <div class="logo-footer-container">
+    <img class="logo-footer" th:src="@{/images/logopets-recortado.png}" alt="logo footer">
+    <h2>PETSV</h2>
+</div>
+<p style="margin-left: 30px;" class="footer-lema">Ayudanos a encontrarnos</p>
+<div class="footer-copyright">
+    <hr>
+    <h4>Copyright 2022</h4>
+</div>
+</div>
+<div class="footer-container">  </div>
+<div class="footer-container">  </div>
+<div class="footer-container">  </div>
+<div class="footer-container"> 
+    <div style="margin-top:10px; "    >
+    <h4>Siguenos</h4>
+    <hr>
+   </div>
+     <div class="footer-socialmedia">
+         <img class="footer-socialmedia-img" th:src="@{/images/footer-social-media.png}" alt="social media">
+     </div>
+    <h4>Contactanos</h4>
+    <div style="display: flex; align-content: space-around;  gap: 15px;">
+    <div><h4>2257-7777</h4></div>
+    <div><h4>7666-7777</h4></div>
+</div>
+</div>
+<div class="footer-container"> <img class="footer-pets-img"  th:src="@{/images/footer_pets.png}" alt="footer pets">  </div>
+</footer>
+<!-- FOOTER END --------------->
+</body>
+
+</html>

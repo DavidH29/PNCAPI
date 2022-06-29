@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+}
+
+.main-footer-container {
+    display: flex;
+    background-color: blue;
+    width: 100vw;
+    height: 125px;
+
+
+
+}
+
+@media (max-width:500px) {
+    .main-footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+.footer-container {
+
+    background-color: #48ACB8;
+
+    width: 100vw;
+    height: 125px;
+
+}
+
+.logo-footer-container {
+
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer-copyright {
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.footer-pets-img {
+    float: right;
+    margin-top: -35px;
+    height: 150px;
+    width: 200px;
+}
+
+
+.footer-socialmedia {
+
+    padding-bottom: 8px;
+
+}
+
+.footer-socialmedia-img {
+    width: 150px;
+    height: 30px;
+}
+
+
+hr {
+    background-color: #00DBD0;
+    width: 100px;
+    height: 3px;
+    color: #00DBD0;
+}

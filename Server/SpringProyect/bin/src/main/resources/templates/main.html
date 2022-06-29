@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <link th:href="@{/css/navbar.css}" rel="stylesheet" type="text/css">
+   <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css">
+   <link th:href="@{/css/petcard.css}" rel="stylesheet" type="text/css">
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+<!-- NAVIGATOR -->
+<header>
+<nav class="main-nav-container">
+<div class="nav-container">  
+    <div class="logo-nav-container" > 
+        <img class="logo-nav" th:src="@{/images/logopets.png}" alt="logo">
+        <a href="main"> <H1 style="margin-top: auto; margin-bottom: auto; color: white; font-size: 2.5rem; ">PETSV</H1></div>
+    </div>
+</div>
+<div class="nav-container"> <a href="aboutus">¿Quienes somos?</a> </div>
+<div class="nav-container"> <a href="campaigns">Campañas</a> </div>
+<div class="nav-container"> <a href="report">Reportar mascota</a>  </div>
+<div class="nav-container"> <a href="">Usuario</a> </div>
+<div class="nav-container"> 
+    <div class="exit-nav">
+    <a class="boton_personalizado" href="index">Salir</a>
+</div>    
+</div>
+</nav>
+</header>
+<!-- NAVIGATOR END -->
+
+<!-- PET CARD -->
+<div class="tittle-main">
+<h1>!Encuentra a tu mascota aqui!</h1>
+</div>
+<div class="pet-card-container">
+<ul style="list-style:none;">
+   	<li>
+		<div class="pet-card" >
+		    <div class="pet-card-img-container">
+		        <img class="pet-card-img" th:src="@{/images/poppy.png}" alt="Imagen de mascota">
+		    </div>
+		    <div class="pet-card-description-container" >
+		        <h3 class="pet-card-name" > poppy</h3>
+		        <p class="pet-card-description" > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  </p>
+                <div class="pet-card-btn-container" >
+                    <a class="delete_petcard-btn" href="">Finalizar Caso</a>
+                    <a class="info_petcard-btn" href="">Informacion</a>
+                </div>
+		    </div>
+		</div>
+   	</li>
+   </ul>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="main-footer-container">
+    <div class="footer-container">  
+        <div class="logo-footer-container">
+        <img class="logo-footer" th:src="@{/images/logopets-recortado.png}" alt="logo footer">
+        <h2>PETSV</h2>
+    </div>
+    <p style="margin-left: 30px;" class="footer-lema">Ayudanos a encontrarnos</p>
+    <div class="footer-copyright">
+        <hr>
+        <h4>Copyright 2022</h4>
+    </div>
+    </div>
+    <div class="footer-container">  </div>
+    <div class="footer-container">  </div>
+    <div class="footer-container">  </div>
+    <div class="footer-container"> 
+        <div style="margin-top:10px; "    >
+        <h4>Siguenos</h4>
+        <hr>
+       </div>
+         <div class="footer-socialmedia">
+             <img class="footer-socialmedia-img" th:src="@{/images/footer-social-media.png}" alt="social media">
+         </div>
+    
+    
+        <h4>Contactanos</h4>
+        <div style="display: flex; align-content: space-around;  gap: 15px;">
+        <div><h4>2257-7777</h4></div>
+        <div><h4>7666-7777</h4></div>
+    </div>
+    
+    </div>
+    <div class="footer-container"> <img class="footer-pets-img"  th:src="@{/images/footer_pets.png}" alt="footer pets">  </div>
+    
+    
+    </footer>
+    <!-- FOOTER END -->
+    
+</body>
+</html>
+
+</html>

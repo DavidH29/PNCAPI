@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th"http://www.thymeleaf.org" lang="en">
+
+<head>
+
+     <link th:href="@{/css/register.css}" rel="stylesheet" type="text/css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Registro </title>
+
+   
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="container1"> 
+    
+            <div class="logo-container" >
+                 <img class="logo-register" th:src="@{/images/logopets.png}" alt="logo">
+            </div>
+        
+        </div>
+
+    <div class="container2"> 
+        <div class="box-container">
+    <div class="box">
+        <div class="tittle">
+        <h1 style="color:#48ACB8; margin-top: 5px; font-family: helvetica; letter-spacing: -1px;">Unetenos y se parte del cambio</h1>
+        </div>
+        <form action="/newPerson" method="post">
+            <label for="email">Email: </label
+            ><input type="text" name="email" id="email" placeholder="Email" />
+            <label for="name">Nombre: </label
+            ><input type="text" name="name" id="name" placeholder="Name" />
+            <label for="phoneNumber">Numero de telefono: </label
+            ><input
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="Phone Number"
+            />
+            <label for="password">Contraseña: </label
+            ><input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+           <div class="submit-btn">
+            <input
+            style="padding-right: 10px; padding-left: 10px; color: white; border: 0px; margin-top: 20px; padding-top: 8px; padding-bottom: 8px; float: right; background-color: #00AEEF"
+            value="Inscribirse" type="submit" />
+        </div>
+
+           <p style=" font-family: helvetica;"> Administrador <input style="margin-top: 20px;" type="checkbox" id="" value=""> </p>
+          </form>
+
+</p> 
+
+    </div>
+ </div>
+
+</div>
+
+
+<div class="container3"> 
+
+  <div class="pets-container" >
+         <img class="pets-img" th:src="@{/images/login_pets.png}" alt="pets aside">
+  </div>
+</div>
+
+
+</div>
+</body>
+
+</html>

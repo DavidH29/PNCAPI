@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th"http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <link th:href="@{/css/navbar.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/information.css}" rel="stylesheet" type="text/css">
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> index </title>
+
+   
+</head>
+
+<body>
+
+<!-- NAVIGATOR --------------->
+<header>
+<nav class="main-nav-container">
+<div class="nav-container">  
+    <div class="logo-nav-container" > 
+        <img class="logo-nav" th:src="@{/images/logopets.png}" alt="logo">
+        <a href="main"> <H1 style="margin-top: auto; margin-bottom: auto; color: white; font-size: 2.5rem; ">PETSV</H1></div>
+    </div>
+</div>
+<div class="nav-container"> <a href="aboutus">¿Quienes somos?</a> </div>
+<div class="nav-container"> <a href="campaigns">Campañas</a> </div>
+<div class="nav-container"> <a href="report">Reportar mascota</a>  </div>
+<div class="nav-container"> <a href="">Usuario</a> </div>
+<div class="nav-container"> 
+    <div class="exit-nav">
+    <a class="boton_personalizado" href="index">Salir</a>
+</div>    
+</div>
+</nav>
+</header>
+<!-- NAVIGATOR END --------------->
+
+<div class="main-container">
+
+<div class="container-1">
+    <div class="back-btn"><a href="">Atras</a></div>
+    <div class="pet-name"><h1>Poppy ID 1</h1></div>
+</div>
+<div class="container-2">
+    <div class="info-img-container">
+        <div class="pet-card-img-container">
+            <img class="pet-card-img" th:src="@{/images/poppy.png}" alt="Imagen de mascota">
+        </div>
+    </div>
+    <div class="info-data-container">
+        <div class="pet-data">
+            <div class="pet-data-col">
+                <p>Nombre</p>
+                <p>Especie</p>
+                <p>Raza</p>
+            </div>
+            <div class="pet-data-col">
+                <p>Tamaño</p>
+                <p>Sexo</p>
+                <p>Color</p>
+            </div>
+            <div class="pet-data-col">
+                <p>Placa</p>
+                <p>Edad</p>
+                <p></p>
+            </div>
+            <div class="pet-data-col"></div>
+
+        </div>
+        <div class="volunteer-data">
+            <div><p>Esta mascota fue encontrada por 
+                <b>Usuario</b> en la campaña Campaña realizada 
+                el <b>Fecha</b> en <b>Ubicacion</b></p></div>
+                <div style="margin-top: 20px;"><p>Telefono de contacto:2257-777</p></div>
+        </div>
+
+    </div>
+
+</div>
+<div class="container-3">
+    <a class="delete_petcard-btn" href="">¿Es tuyo? Contactanos</a>
+    <div><p style=" font-family: Helvetica; font-size: 1.3rem;">o si prefieres</p></div>
+    <a class="info_petcard-btn" href="">¡Adoptame!</a>
+</div>
+
+
+</div>
+
+
+<!-- FOOTER --------------->
+<footer class="main-footer-container">
+<div class="footer-container">  
+    <div class="logo-footer-container">
+    <img class="logo-footer" th:src="@{/images/logopets-recortado.png}" alt="logo footer">
+    <h2>PETSV</h2>
+</div>
+<p style="margin-left: 30px;" class="footer-lema">Ayudanos a encontrarnos</p>
+<div class="footer-copyright">
+    <hr>
+    <h4>Copyright 2022</h4>
+</div>
+</div>
+<div class="footer-container">  </div>
+<div class="footer-container">  </div>
+<div class="footer-container">  </div>
+<div class="footer-container"> 
+    <div style="margin-top:10px; "    >
+    <h4>Siguenos</h4>
+    <hr>
+   </div>
+     <div class="footer-socialmedia">
+         <img class="footer-socialmedia-img" th:src="@{/images/footer-social-media.png}" alt="social media">
+     </div>
+    <h4>Contactanos</h4>
+    <div style="display: flex; align-content: space-around;  gap: 15px;">
+    <div><h4>2257-7777</h4></div>
+    <div><h4>7666-7777</h4></div>
+</div>
+</div>
+<div class="footer-container"> <img class="footer-pets-img"  th:src="@{/images/footer_pets.png}" alt="footer pets">  </div>
+</footer>
+<!-- FOOTER END --------------->
+</body>
+
+</html>

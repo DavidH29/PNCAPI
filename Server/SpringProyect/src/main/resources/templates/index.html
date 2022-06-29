@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th"http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <link th:href="@{/css/index.css}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./../static/css/index.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Login</title>
+    
+     
+
+   
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="container1"> 
+    
+            <div class="logo-container" >
+                <img class="logo-register" th:src="@{/images/logopets.png}" alt="logo">
+            </div>
+        
+        </div>
+
+    <div class="container2"> 
+        <div class="box-container">
+    <div class="box">
+        <div class="tittle">
+        <h1 style="color:#48ACB8; margin-top: 5px; font-family: helvetica; letter-spacing: -1px;">!Bienvenido a nuestra familia!</h1>
+        </div>
+        <form method="post" action="/loginAccess">
+            <p>Correo
+            <input style="margin-top: 15px;  padding-top: 5px;  padding-bottom: 5px;" type="text" name="name"
+                placeholder="" /> </p>
+             <p>Contraseña  
+            <input style="margin-top: 15px; padding-top: 5px; padding-bottom: 5px;" type="password" name="password"
+                placeholder="" />
+            </p>
+            <div class="submit-btn">
+            <input
+            style="padding-right: 10px; padding-left: 10px; color: white; border: 0px; margin-top: 20px; padding-top: 8px; padding-bottom: 8px; float: right; background-color: #00AEEF"
+            value="Ingresar" type="submit" />
+        </div>
+        </form>
+<p style=" font-family: helvetica;">¿Aun no tienes una cuenta?</p>
+<p style=" font-family: helvetica;">Registrate totalmente gratis <a href="./register">Aqui</a>
+</p> 
+
+    </div>
+ </div>
+
+</div>
+
+
+<div class="container3"> 
+
+  <div class="pets-container" >
+        <img class="pets-img" th:src="@{/images/login_pets.png}" alt="pets aside">
+  </div>
+</div>
+
+
+</div>
+</body>
+
+</html>
